@@ -18,14 +18,14 @@
 ```$ ansible-playbook -i host.oracle.com, playbook.yml```
 
 ## get facts
-```
+```bash
 $ ansible server -m setup [-a 'filter=ansible_*_mb']
 
   - set_fact: fact_name={{ result.stdout }}
 ```
 
 ## Playbook
-```
+```yaml
 ---
 - name: Configure server X
   hosts: webservers

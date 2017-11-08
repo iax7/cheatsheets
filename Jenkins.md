@@ -1,6 +1,6 @@
 ## Disable all Nodes
 run in "nodes" jenkins path
-```
+```bash
 tmp=$(mktemp)
 cat > $tmp <<EOF
   <temporaryOfflineCause class="hudson.slaves.OfflineCause$UserCause">

@@ -46,25 +46,25 @@ $ sudo systemctl restart network.service
 ip link set dev eth0 address 00:0c:29:33:4e:aa
 ```
 ## Setting Other Configurations of Network Interface
-```
-# ip link set dev eth0 mtu 2000
-# ip link set dev eth0 multicast on
-# ip link set dev eth0 txqueuelen 1200
-# ip link set dev eth0 promisc on
-# ip link set dev eth0 allmulti on
+```bash
+$ ip link set dev eth0 mtu 2000
+$ ip link set dev eth0 multicast on
+$ ip link set dev eth0 txqueuelen 1200
+$ ip link set dev eth0 promisc on
+$ ip link set dev eth0 allmulti on
 ```
 ## Enabling or Disabling Network Interface
-```
-# ip link set eth0 down
-# ip link set eth0 up
+```bash
+$ ip link set eth0 down
+$ ip link set eth0 up
 ```
 ## Enable or disable the use of ARP protocol
-```
-# ip link set dev eth0 arp on
+```bash
+$ ip link set dev eth0 arp on
 ```
 ## To undo these steps (e.g. before switching to a dynamic IP)
-```
-# ip addr flush dev interface    # remove ip
-# ip route flush dev interface   # remove gateway
-# ip link set interface down     # disable interface
+```bash
+$ ip addr flush dev interface    # remove ip
+$ ip route flush dev interface   # remove gateway
+$ ip link set interface down     # disable interface
 ```
